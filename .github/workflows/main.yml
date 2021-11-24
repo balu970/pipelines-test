@@ -31,6 +31,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: infra-deploy
         run: |
+          ls -la 
     #      sudo apt-get -y update; sudo apt-get -y install git curl jq python3-pip; sudo apt-get -y install wget unzip
     #      sudo pip3 install -U awscli
     #      sudo chown -R $(whoami) /usr/local/bin
@@ -40,5 +41,3 @@ jobs:
     #      sudo wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.5.0.2216-linux.zip
     #      sudo unzip sonar-scanner-cli-4.5.0.2216-linux.zip
     #      eval `ssh-agent -s`
-          
-          ls -la 

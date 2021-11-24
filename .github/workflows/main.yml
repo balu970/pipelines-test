@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo apt-get -y update; sudo apt-get -y install git curl jq python3-pip; sudo apt-get -y install wget unzip
           sudo pip3 install -U awscli
-          sudo chown -R $(whoami) /usr/local
+          sudo chown -R $(whoami) /usr/local/bin
           sudo curl -fsSL https://get.docker.com -o get-docker.sh
           sudo curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
           sudo tfswitch 0.12.23

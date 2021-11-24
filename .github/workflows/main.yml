@@ -31,8 +31,8 @@ jobs:
         run: |
           sudo apt-get -y update; sudo apt-get -y install git curl jq python3-pip; sudo apt-get -y install wget unzip
           pip3 install -U awscli
-          curl -fsSL https://get.docker.com -o get-docker.sh
-          curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
+          sudo curl -fsSL https://get.docker.com -o get-docker.sh
+          sudo curl -L https://raw.githubusercontent.com/warrensbox/terraform-switcher/release/install.sh | bash
           tfswitch 0.12.23
           wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.5.0.2216-linux.zip
           unzip sonar-scanner-cli-4.5.0.2216-linux.zip
